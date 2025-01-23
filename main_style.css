@@ -45,7 +45,88 @@ body {
   align-items: center; /* Center items vertically */
   min-width: 100%;
   position: fixed;
+  z-index: 999;
+}
+
+.toggle {
+  margin-left: 25px;
+  padding: 10px;
+  display: none;
+}
+
+.toggle:hover {
+  background-color: #424242;
+  transition-duration: 0.5s;
+  border-radius: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .toggle {
+    display: flex;
+  }
+}
+
+.sidebar {
+  position: fixed;
+  flex-direction: column;
+  width: 30%;
+  height: 100vh;
   z-index: 1000;
+  backdrop-filter: blur(10px);
+  display: none;
+}
+
+.sidebar nav {
+  margin-right: 10px;
+  height: 100%;
+  display: flex;
+  align-items: start;
+}
+
+.sidebar ul {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar a {
+  text-decoration: none;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+}
+
+.main_menu {
+  padding-top: 20px;
+}
+
+.main_menu a {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.main_menu :is(a:hover, a:active) {
+  background-color: #424242;
+  transition-duration: 0.5s;
+}
+
+@media screen and (max-width: 425px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .main_menu a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
 }
 
 .logo {
@@ -66,6 +147,7 @@ body {
   font-weight: bold;
   font-size: 20px;
   text-align: center;
+  padding: 3px;
 }
 
 nav {
@@ -502,7 +584,7 @@ main {
 }
 
 .education_card_heading {
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: bold;
   color: rgb(94, 30, 206);
   margin: 10px;
@@ -576,7 +658,6 @@ main {
 .skill_card:hover {
   transform: translateY(-10px);
   box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.716);
-  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .skill_card img {
@@ -642,6 +723,11 @@ main {
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
+.my_project_card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.716);
+}
+
 .my_project_card img {
   margin: 30px;
   width: 30%;
@@ -680,12 +766,6 @@ main {
   margin-bottom: 20px;
 }
 
-.my_project_card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.716);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
 footer {
   background-color: hsla(0, 0%, 20%, 0.517);
   color: #fff;
@@ -713,4 +793,12 @@ footer {
 
 .footer_social a {
   margin: 10px;
+  border-radius: 20px;
+  padding: 5px;
+  transition: box-shadow 0.3s;
+}
+
+.footer_social a:hover {
+  background-color: #424242;
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.651);
 }
