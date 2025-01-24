@@ -23,11 +23,6 @@ body {
   background-color: #000;
 }
 
-.remove {
-  white-space: nowrap;
-  text-align: center;
-}
-
 /* .container{
     min-height: 500vh;
     min-width: 100%;
@@ -209,6 +204,19 @@ nav {
 .email_btn:hover {
   background-color: #35209f;
   transition-duration: 0.5s;
+}
+
+.remove {
+  white-space: nowrap;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.remove img {
+  width: 1.2rem;
+  height: 1.2rem;
 }
 
 main {

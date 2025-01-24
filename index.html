@@ -8,6 +8,7 @@
   </head>
   <body>
     <div class="container">
+      <!-- navbar for screens above 768px -->
       <header class="navbar">
         <a onclick="openscrollMenu()" id="open" class="toggle">
           <svg
@@ -35,13 +36,16 @@
           </ul>
         </nav>
         <a
-          href="https://mail.google.com/mail/?view=cm&fs=1&to=mayurkalbande1001@gmail.com"
+          href="mailto:mayurkalbande1001@gmail.com"
           class="email_btn"
           id="mailMeButton"
-          ><span class="remove"> &#128386; Mail me </span></a
+          ><span class="remove">
+            <img src="./Images/icons8-mail-24.png" />Mail me
+          </span></a
         >
       </header>
 
+      <!-- sidebar for screens below 425px -->
       <header class="sidebar">
         <nav>
           <ul>
@@ -69,12 +73,14 @@
         </nav>
       </header>
 
+      <!-- start of main content -->
       <main>
+        <!-- banner section start -->
         <section class="banner" id="Home">
           <div class="banner-text">
             <p class="banner-title">Mayur Kalbande ></p>
             <p class="banner-description">
-              Product Developer
+              Aspiring Product Developer
               <span class="span_design">& <br />visual Developer</span>
             </p>
             <p class="banner-description2">
@@ -93,9 +99,9 @@
               </a>
 
               <a href="#" id="play-audio" class="banner-button">
-                <audio id="intro-audio" src="./audio/sample-3s.mp3"></audio>
+                <audio id="intro-audio" src="./audio/MyIntro2.m4a"></audio>
                 <img
-                  src="./images/icons8-circled-play-24.png"
+                  src="./Images/icons8-circled-play-24.png"
                   alt="Play Audio"
                 />
                 <span class="remove">My Introduction</span>
@@ -103,7 +109,9 @@
             </div>
           </div>
         </section>
+        <!-- banner section end -->
 
+        <!-- about me section starts -->
         <section class="about_me_section" id="About">
           <div class="heading_divider">🙋🏻‍♂️About Me🙋🏻‍♂️</div>
           <div class="about_me_container">
@@ -128,14 +136,22 @@
                 trends in web development and DevOps. I look forward to
                 collaborating with like-minded individuals to bring ideas to
                 life and make a difference in the tech world.
+                <br /><br />
+                Want to connect with me mail me at -
+                <span style="color: blueviolet"
+                  >mayurkalbande1001@gmail.com</span
+                >😊
               </p>
             </div>
           </div>
         </section>
+        <!-- about me section end -->
 
+        <!-- education section start -->
         <section class="my_education_section" id="Education">
           <div class="heading_divider">🎓My Education🎓</div>
           <div class="education_container">
+            <!--education card 1-->
             <div class="education_card">
               <img src="./Images/balaji_uni1.jpg" alt="MCA" />
               <div class="education_card_heading">
@@ -144,12 +160,13 @@
               </div>
               <div class="education_card_description">
                 <p class="clg_name">🎓Sri Balaji University Tathawade, Pune</p>
-                <p class="per_cgpa">📚CGPA: 8.5</p>
+                <p class="per_cgpa">📚Currently Pursuing</p>
               </div>
             </div>
 
+            <!--education card 2-->
             <div class="education_card">
-              <img src="./images/indira_clg.jpeg" alt="BCA" />
+              <img src="./Images/indira_clg.jpeg" alt="BCA" />
               <div class="education_card_heading">
                 <h1>Bachelor's Of Computer Application</h1>
                 <p>2021-2024</p>
@@ -162,8 +179,9 @@
               </div>
             </div>
 
+            <!--education card 3-->
             <div class="education_card">
-              <img src="./images/gandhigram_clg.jpeg" alt="BCA" />
+              <img src="./Images/gandhigram_clg.jpeg" alt="12th" />
               <div class="education_card_heading">
                 <h1>
                   Higher Secondary <br />
@@ -177,8 +195,9 @@
               </div>
             </div>
 
+            <!--education card 4-->
             <div class="education_card">
-              <img src="./images/Agragmi_school.jpeg" alt="BCA" />
+              <img src="./Images/Agragmi_school.jpeg" alt="10th" />
               <div class="education_card_heading">
                 <h1>Secondary School <br />Certificate</h1>
                 <p>2018-2019</p>
@@ -192,73 +211,89 @@
             </div>
           </div>
         </section>
+        <!--Education section end-->
 
+        <!--Skills section start-->
         <section class="my_skill_section" id="Skills">
           <div class="heading_divider">📚My Skills📚</div>
           <div class="skill_container">
+            <!--skill card 1-->
             <div class="skill_card">
-              <img src="./images/html1.svg" alt="HTML5" />
+              <img src="./Images/html1.svg" alt="HTML5" />
               <p>HTML5</p>
             </div>
 
+            <!--skill card 2-->
             <div class="skill_card">
               <img src="./Images/css1.svg" alt="CSS3" />
               <p>CSS3</p>
             </div>
 
+            <!--skill card 3-->
             <div class="skill_card">
-              <img src="./images/javascript.svg" alt="JavaScript" />
+              <img src="./Images/javascript.svg" alt="JavaScript" />
               <p>JavaScript</p>
             </div>
 
+            <!--skill card 4-->
             <div class="skill_card">
-              <img src="./images/react.svg" alt="React" />
+              <img src="./Images/react.svg" alt="React" />
               <p>React</p>
             </div>
 
+            <!--skill card 5-->
             <div class="skill_card">
-              <img src="./images/icons8-nodejs.svg" alt="Node.js" />
+              <img src="./Images/icons8-nodejs.svg" alt="Node.js" />
               <p>Node.js</p>
             </div>
 
+            <!--skill card 6-->
             <div class="skill_card">
-              <img src="./images/mongodb.svg" alt="MongoDB" />
+              <img src="./Images/mongodb.svg" alt="MongoDB" />
               <p>MongoDB</p>
             </div>
 
+            <!--skill card 7-->
             <div class="skill_card">
-              <img src="./images/icons8-express-js.svg" alt="Express.js" />
+              <img src="./Images/icons8-express-js.svg" alt="Express.js" />
               <p>Express.js</p>
             </div>
 
+            <!--skill card 8-->
             <div class="skill_card">
               <img src="./Images/git.svg" alt="Git" />
               <p>Git</p>
             </div>
 
+            <!--skill card 9-->
             <div class="skill_card">
               <img src="./Images/icons8-github1.svg" alt="GitHub" />
               <p>GitHub</p>
             </div>
 
+            <!--skill card 10-->
             <div class="skill_card">
               <img src="./Images/icons8-java.svg" alt="Java" />
               <p>Java</p>
             </div>
 
+            <!--skill card 11-->
             <div class="skill_card">
               <img src="./Images/icons8-vs-code.svg" alt="VS Code" />
               <p>VS Code</p>
             </div>
           </div>
         </section>
+        <!--Skills section end-->
 
+        <!--Projects section start-->
         <section class="my_project_section" id="Projects">
           <div class="heading_divider">🚀My Projects🚀</div>
           <div class="my_project_container">
+            <!--project card 1-->
             <div class="my_project_card">
               <img
-                src="./Images/Food_Delivery.jpeg"
+                src="./Images/foodswift_project.png"
                 alt="Food delivery application"
                 width="200"
                 height="200"
@@ -284,6 +319,7 @@
               </div>
             </div>
 
+            <!--project card 2-->
             <div class="my_project_card">
               <img
                 src="./Images/porfolio_project.png"
@@ -315,14 +351,15 @@
             </div>
           </div>
         </section>
+        <!--Projects section end-->
       </main>
 
+      <!--Footer start-->
       <footer>
+        <!--Footer section start-->
         <section class="footer_container">
           <div class="footer_social">
-            <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=mayurkalbande1001@gmail.com"
-            >
+            <a href="mailto:mayurkalbande1001@gmail.com">
               <img src="./Images/icons8-gmail.svg" alt="Mail_id" />
             </a>
             <a href="https://www.linkedin.com/in/mayur-kalbande-11a270224/">
@@ -331,14 +368,18 @@
             <a
               href="https://www.instagram.com/mayur_k1001?igsh=bGhpZXQyc29uNWVv"
             >
-              <img src="./images/icons8-instagram.svg" alt="Instagram" />
+              <img src="./Images/icons8-instagram.svg" alt="Instagram" />
             </a>
           </div>
         </section>
+        <!--Footer section end-->
       </footer>
+      <!--Footer end-->
     </div>
 
+    <!--Scripts-->
     <script>
+      /* code for my introduction audio play */
       document
         .getElementById("play-audio")
         .addEventListener("click", function (e) {
@@ -347,12 +388,14 @@
           audio.play(); // Play the audio
         });
 
+      /* code for opening sidebar */
       function openscrollMenu() {
         const sidebar = document.querySelector(".sidebar");
 
         sidebar.style.display = "flex";
       }
 
+      /* code for closing sidebar */
       function closescrollMenu() {
         const sidebar = document.querySelector(".sidebar");
 
